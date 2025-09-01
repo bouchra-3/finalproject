@@ -1,0 +1,81 @@
+
+
+.favorites-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f7f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.favorites-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.favorites-empty {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 3rem;
+}
+
+.favorite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favorite-item-info img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e63946;
+}
+
+.favorite-item-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.favorite-item-info p {
+  margin: 0.2rem 0 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.favorite-item-actions button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.favorite-item-actions button:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
